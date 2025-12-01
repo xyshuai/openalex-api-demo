@@ -11,7 +11,7 @@ MAILTO = "your email address"
 # Years to harvest (This is an demo example, you may change the range based on your needs)
 YEARS = list(range(2023, 2025))   # Example: 2023–2024
 PER_PAGE = 200                    # Cursor pagination max = 200
-MAX_PAGES = 5                  # None → full harvest; set to small int (e.g., 5) for testing
+MAX_PAGES = None                  # None → full harvest; set to small int (e.g., 5) for testing
 SLEEP_SEC = 1.0                   # Delay between pages; increase if rate-limited
 
 # Base filter
@@ -422,3 +422,4 @@ for YEAR in YEARS:
 
 
 print("\n🎉 All years processed.")
+
